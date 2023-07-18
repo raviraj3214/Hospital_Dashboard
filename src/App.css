@@ -1,0 +1,257 @@
+
+  
+.App{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100%;
+}
+.AppHeader{
+    height: 7.7vh;
+    width:100%;
+    display: flex;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background: #26A69A;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+
+
+}
+
+
+
+.Page{
+    margin-left: 2%;
+    width:88vw;
+    margin-bottom: 10vh;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+.SideMenuAndPageContent{
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-left: auto;
+    background-color: rgba(230, 237, 237, 0.779) ;
+}
+.sidebar{
+  
+    background: #26A69A;
+    
+  
+    color: #fff;
+    height: 100vh;
+    width: 20vw;
+    transition: all 0.3s;
+    z-index: 5;
+    animation-duration: 0.3s;
+  
+    border-radius: 20px 0 0 20px;
+    box-shadow: 7px 0px 7px rgba(6, 34, 17, 0.6);
+    position: fixed; 
+      
+  
+}
+.sidebar{
+  flex: 0 0 400px;
+}
+.SideMenuVertical{
+    height: 100%;
+}
+.PageContent{
+    
+        /* Fill remaining space horizontally and vertically */
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        width:100%;
+      }
+
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+.top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+}
+.logo{
+    font-size: 30px;
+    color: #ffffff;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.link{
+    display: flex;
+    color: #ffffff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background:#07534b;
+    text-decoration: "none";
+    transition: all 0.5s;
+}
+.active{
+    background: #07534b;
+    text-decoration: "none";
+    
+}
+.footer{
+    height:10vh;
+    width:100vw;
+    
+    bottom: 0;
+    background: #F5F5F5;
+}
+.icon, .link_text{
+    font-size: 18px;
+    
+    color: #ffffff;
+}
+.link_text{
+    font-size: 18px;
+    text-decoration: "none";
+    font-style: Liberation Sans;
+    
+}
+ 
+.text-auto-setter{
+
+}
+    .cardcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:88vw;
+    
+      }
+      
+      /* Card.css */
+      .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        width:85vw;
+        height:auto;
+        flex-direction: row;
+      }
+.card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .card-header {
+    background-color: #f2f2f2;
+    padding: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .card-body {
+    display: flex;
+    padding: 16px;
+  }
+  
+  .image-container {
+    flex: 0 0 120px;
+    margin-right: 16px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .user-details {
+    display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+    flex: 1;
+  }
+  
+  .user-details p {
+   
+    margin: 8px 1px;
+    font-size: 0.9rem;
+    text-size-adjust: auto;
+    color: #555;
+  }
+  .button-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown{
+    flex: 1;
+  
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+  
+      
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        .cardcontainer {
+          flex-direction: column;
+        }
+      
+        
+      }
+      
